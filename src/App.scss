@@ -12,8 +12,9 @@ body {
 }
 
 .container {
-  width: 1280px;
-  min-width: 1280px;
+  width: 85vw;
+  height: 85vh;
+  max-width: 100%;
   margin: 0 auto;
 
   .wrapper {
@@ -47,7 +48,7 @@ body {
 
 header {
   height: 100px;
-
+  width: 100%;
   .inner-header {
     position: relative;
     z-index: 10;
@@ -115,15 +116,16 @@ header {
         position: relative;
         .menu-links {
           display: flex;
-          justify-content: space-between;
-          align-items: center;
+          justify-content: right;
+          text-align: right;
           position: relative;
           top: 150px;
           nav {
-            display: block;
             ul {
               padding: 0;
               margin: 0;
+              float: right;
+              clear: right;
               li {
                 list-style: none;
                 font-size: 4rem;
@@ -132,9 +134,9 @@ header {
                 height: 80px;
                 overflow: hidden;
                 position: relative;
-                width: 700px;
+                width: 70vw;
                 a {
-                  position: absolute;
+                  position: relative;
                   color: #fff;
                   text-decoration: none;
                   &:hover {
