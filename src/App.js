@@ -1,6 +1,8 @@
 import React from "react";
 import "./App.scss";
+import TextLoop from "react-text-loop";
 import Header from "./components/Header";
+import { AnimatePresence, motion } from "framer-motion";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
@@ -41,11 +43,16 @@ function Home() {
   return (
     <div className="container">
       <div className="wrapper">
-        <h5>
-          The <b>HAMBRG</b>, is a creative, engineer driven, global agency
-          working on advancing the software, advertising and design communities
-          to new heights.
-        </h5>
+        <h5> HI, I'M DUSTIN MA 🌲 </h5>
+        <hr align="left"></hr>
+        <TextLoop mask={true}>
+          <h3>ASPIRING FRONT END DEVELOPER</h3>
+          <h3>COMPUTER SCIENCE STUDENT</h3>
+          <h3>DESIGN ENTHUSIAST</h3>
+        </TextLoop>{" "}
+        <h2>MORE TEXT HERE</h2>
+        <h2>AND HERE</h2>
+        <h2>ETC</h2>
       </div>
     </div>
   );

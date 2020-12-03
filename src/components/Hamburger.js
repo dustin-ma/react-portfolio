@@ -17,6 +17,8 @@ const Hamburger = ({ state }) => {
   useEffect(() => {
     if (state.clicked === false) {
       // close the menu
+      /* menu.style.display = "none"; */
+
       gsap.to([revealMenu, revealMenuBackground], {
         duration: 0.8,
         height: 0,
@@ -36,6 +38,7 @@ const Hamburger = ({ state }) => {
       (state.clicked === true && state.initial === null)
     ) {
       // open menu
+      /* menu.style.display = "block"; */
       gsap.to(menu, {
         //change the display var to block after the animation is over
         duration: 0,
@@ -67,17 +70,17 @@ const Hamburger = ({ state }) => {
 
   const staggerText = (node1, node2, node3) => {
     gsap.from([node1, node2, node3], {
-      duration: 0.8,
+      duration: 2,
       y: 100,
       delay: 0.1,
       ease: "power3.inOut",
       stagger: {
-        amount: 0.3,
+        amount: 0.4,
       },
     });
   };
 
-  const fadeInUp = (node) => {
+  /*   const fadeInUp = (node) => {
     gsap.from(node, {
       y: 60,
       duration: 1,
@@ -85,7 +88,7 @@ const Hamburger = ({ state }) => {
       opacity: 0,
       ease: "power3.inOut",
     });
-  };
+  }; */
 
   return (
     <div ref={(el) => (menu = el)} className="hamburger-menu">
@@ -94,10 +97,7 @@ const Hamburger = ({ state }) => {
         className="menu-secondary-background-color"
       ></div>
       <div ref={(el) => (revealMenu = el)} className="menu-layer">
-        <div
-          ref={(el) => (revealCityBackground = el)}
-          className="menu-city-background"
-        ></div>
+        <div className="menu-city-background"></div>
         <div className="container">
           <div className="wrapper">
             <div className="menu-links">
@@ -105,17 +105,17 @@ const Hamburger = ({ state }) => {
                 <ul>
                   <li>
                     <Link ref={(el) => (line1 = el)} to="/opportunities">
-                      Opportunities
+                      ABOUT ME
                     </Link>
                   </li>
                   <li>
                     <Link ref={(el) => (line2 = el)} to="/solutions">
-                      Solutions
+                      PROJECTS
                     </Link>
                   </li>
                   <li>
                     <Link ref={(el) => (line3 = el)} to="/contact-us">
-                      Contact Me
+                      CONTACT ME
                     </Link>
                   </li>
                 </ul>
@@ -133,15 +133,13 @@ const Hamburger = ({ state }) => {
                   mollit anim id est laborum.
                 </p>
               </div> */}
-              {/* <div className="locations">
+              <div className="Check out:">
                 Locations:
-                <span>Holder1</span>
-                <span>Holder2</span>
-                <span>Holder3</span>
-                <span>Holder4</span>
-                <span>Holder5</span>
-                <span>Holder6</span>
-              </div> */}
+                <span>Instagram</span>
+                <span>Github</span>
+                <span>LinkedIn</span>
+                <span>Bandcamp</span>
+              </div>
             </div>
           </div>
         </div>
