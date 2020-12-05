@@ -133,13 +133,13 @@ const Hamburger = ({ state }) => {
                   mollit anim id est laborum.
                 </p>
               </div> */}
-              <div className="Check out:">
+              {/* <div className="Check out:">
                 Locations:
                 <span>Instagram</span>
                 <span>Github</span>
                 <span>LinkedIn</span>
                 <span>Bandcamp</span>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

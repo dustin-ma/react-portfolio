@@ -50,7 +50,7 @@ function Home() {
           <h3>COMPUTER SCIENCE STUDENT</h3>
           <h3>DESIGN ENTHUSIAST</h3>
         </TextLoop>{" "}
-        <h2>MORE TEXT HERE</h2>
+        <h2>TORONTO, CANADA 📍</h2>
         <h2>AND HERE</h2>
         <h2>ETC</h2>
       </div>
