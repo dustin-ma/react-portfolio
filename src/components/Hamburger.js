@@ -104,17 +104,17 @@ const Hamburger = ({ state }) => {
               <nav>
                 <ul>
                   <li>
-                    <Link ref={(el) => (line1 = el)} to="/opportunities">
+                    <Link ref={(el) => (line1 = el)} to="/aboutme">
                       ABOUT ME
                     </Link>
                   </li>
                   <li>
-                    <Link ref={(el) => (line2 = el)} to="/solutions">
+                    <Link ref={(el) => (line2 = el)} to="/projects">
                       PROJECTS
                     </Link>
                   </li>
                   <li>
-                    <Link ref={(el) => (line3 = el)} to="/contact-us">
+                    <Link ref={(el) => (line3 = el)} to="/contact">
                       CONTACT ME
                     </Link>
                   </li>

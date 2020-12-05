@@ -15,9 +15,9 @@ function App() {
             <div className="home">
               <Switch>
                 <Route exact path="/" component={Home} />
-                <Route exact path="/opportunities" component={Opportunities} />
-                <Route exact path="/solutions" component={Solutions} />
-                <Route exact path="/contact-us" component={Contact} />
+                <Route exact path="/aboutme" component={AboutMe} />
+                <Route exact path="/projects" component={Projects} />
+                <Route exact path="/contact" component={Contact} />
               </Switch>
             </div>
           </div>
@@ -27,16 +27,16 @@ function App() {
   );
 }
 
-function Opportunities() {
-  return <p>Discover our numerous opportunities</p>;
+function AboutMe() {
+  return <p>Stuff about me</p>;
 }
 
-function Solutions() {
-  return <p>Solutions that help you.</p>;
+function Projects() {
+  return <p>My projects!</p>;
 }
 
 function Contact() {
-  return <p>Feel free to reach us.</p>;
+  return <p>Feel free to reach me!</p>;
 }
 
 function Home() {
@@ -50,8 +50,8 @@ function Home() {
           <h3>COMPUTER SCIENCE STUDENT</h3>
           <h3>DESIGN ENTHUSIAST</h3>
         </TextLoop>{" "}
-        <h2>TORONTO, CANADA 📍</h2>
-        <h2>AND HERE</h2>
+        <h2>📍 TORONTO, CANADA</h2>
+        <h2>MORE INFO</h2>
         <h2>ETC</h2>
       </div>
     </div>
