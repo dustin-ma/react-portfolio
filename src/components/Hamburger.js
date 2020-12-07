@@ -8,7 +8,7 @@ const Hamburger = ({ state }) => {
   let menu = useRef(null);
   let revealMenu = useRef(null);
   let revealMenuBackground = useRef(null);
-  let revealCityBackground = useRef(null);
+  // let revealCityBackground = useRef(null);
   let line1 = useRef(null);
   let line2 = useRef(null);
   let line3 = useRef(null);
