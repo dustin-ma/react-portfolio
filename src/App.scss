@@ -124,6 +124,16 @@ img {
        // padding-right: 360px;
       }
 
+      a {
+        color: #e4e4e4;
+        margin: 0 auto;
+        font-size: 1.3rem;
+        font-weight: 300;
+      }
+      a:hover{
+        color: #f1d493;
+      }
+
       h2 {
         color: #e4e4e4;
         margin: 0 auto;
@@ -140,8 +150,11 @@ img {
         h3 {
           font-size: 2vw;
         }
-        hr {
-          width: 10vw;
+        h2 {
+          font-size: 2vw;
+        }
+        .link {
+          font-size: 2vw;
         }
       }
     }
