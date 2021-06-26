@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import gsap from "gsap";
 
+
 // note that the state here is passed from Header.js!
 const Hamburger = ({ state }) => {
   // these are the vars for our animated dom nodes

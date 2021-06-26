@@ -1,9 +1,9 @@
 import React from "react";
 import "./App.scss";
-import TextLoop from "react-text-loop";
 import Header from "./components/Header";
-import { AnimatePresence, motion } from "framer-motion";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import TextLoop from "react-text-loop";
+import bgphoto from "images/bgf.jpg";
 
 function App() {
   return (
@@ -42,17 +42,16 @@ function Contact() {
 function Home() {
   return (
     <div className="container">
+      <img src={bgphoto} alt=""/>
       <div className="wrapper">
         <h5> HI, I'M DUSTIN MA 🌲 </h5>
         <hr align="left"></hr>
-        <TextLoop mask={true}>
+        <TextLoop>
           <h3>ASPIRING FRONT END DEVELOPER</h3>
           <h3>COMPUTER SCIENCE STUDENT</h3>
           <h3>DESIGN ENTHUSIAST</h3>
-        </TextLoop>{" "}
+        </TextLoop>
         <h2>📍 TORONTO, CANADA</h2>
-        <h2>MORE INFO</h2>
-        <h2>ETC</h2>
       </div>
     </div>
   );
