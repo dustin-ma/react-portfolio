@@ -64,7 +64,7 @@ const Header = ({ history }) => {
         <div className="wrapper">
           <div className="inner-header">
             <div className="logo">
-              <Link to="/">DUSTINM.</Link>
+              <Link to="/">DUSTIN_MA</Link>
             </div>
             <div className="menu">
               <button disabled={disabled} onClick={handleMenu}>
