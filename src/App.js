@@ -74,14 +74,15 @@ function Home() {
   return (
     <div className="container background fade-in-image">
       <div className="wrapper centered fade-in-delay">
-        <h5> HI, I'M DUSTIN MA 👋 </h5>
+        <h5>HI, I'M DUSTIN MA 👋 </h5>
         <hr className="animated" align="left"></hr>
         <TextLoop>
           <h3>ASPIRING FRONT END DEVELOPER</h3>
           <h3>COMPUTER SCIENCE STUDENT</h3>
           <h3>DESIGN ENTHUSIAST</h3>
         </TextLoop>
-        <h2>📍 TORONTO, CANADA</h2>
+        <h2>BASED IN TORONTO, CANADA</h2>
+        <h3 align="center"><Link className="link" to="/aboutme">more ➤</Link></h3>
       </div>
     </div>
   );
