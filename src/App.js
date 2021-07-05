@@ -48,8 +48,9 @@ function AboutMe() {
 function Projects() {
   return (
     <div className="infoBox fade-in-delay">
-      
-
+      <h5>My Projects</h5>
+      <h3> -- This page is currently under construction, please refer to my <a href="https://drive.google.com/uc?export=download&id=1Ni2Qd80STRM8kh7NkMIde_EKDZDvf0O6">resume</a> for now,
+      sorry! </h3>
       <h3><Link className="link" to="/">go back</Link></h3>
     </div>
   );
